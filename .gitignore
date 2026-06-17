@@ -1,0 +1,10 @@
+# Real token (the .example.php template is committed instead)
+minecraft/stats-secret.php
+
+# Runtime version-data cache on the VPS
+minecraft/cache/
+
+# Local SQLite (the counts DB lives outside the web root on the VPS anyway)
+*.db
+*.db-wal
+*.db-shm
