@@ -1,6 +1,6 @@
 # Code Mirror of Serilum's Update Checker
 
-This is the code behind the little update checker at `update.serilum.com`. My mods (anything built on [Collective](https://modrinth.com/mod/collective)) ask it once on startup whether a newer version is out, and it answers with the latest version number. That is the whole job.
+This is the code behind the little update checker at `update.serilum.com`. Each mod runs it once via [Collective](https://modrinth.com/mod/collective) on startup to check whether a newer version is out, and it answers with the latest version number. That is the whole job.
 
 It is mirrored here so you can read exactly what runs on the server. Nothing hidden. This GitHub repo exists for full transparency.
 
