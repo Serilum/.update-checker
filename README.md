@@ -2,7 +2,7 @@
 
 This is the code behind the little update checker at `update.serilum.com`. My mods (anything built on [Collective](https://modrinth.com/mod/collective)) ask it once on startup whether a newer version is out, and it answers with the latest version number. That is the whole job.
 
-It is mirrored here so you can read exactly what runs on the server. Nothing hidden.
+It is mirrored here so you can read exactly what runs on the server. Nothing hidden. This GitHub repo exists for full transparency.
 
 ## What it collects
 
@@ -28,6 +28,10 @@ That is the entire dataset. I use it to see which versions and loaders people ru
 There is nothing in here that ties a check back to a person. The counter cannot tell who you are. It only knows that *a* check happened.
 
 Your IP does reach the server for the moment it takes to answer the request (it travels through Cloudflare to get there, like a big chunk of the web does), but the code never reads or stores it, and this endpoint keeps no access logs. Only the counter is touched.
+
+## Where the update check is located
+
+The code that runs in your game which makes the actual "Am I on the last version?" check is located in Collective. You can find the exact file and code here: [RegisterMod.java](https://github.com/Serilum/Collective/blob/HEAD/Common/src/main/java/com/natamus/collective/check/RegisterMod.java). Between that file and the three in this GitHub repo, you can read the whole round trip.
 
 ## No privacy policy?
 
